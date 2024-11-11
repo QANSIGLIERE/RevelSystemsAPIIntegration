@@ -1,6 +1,6 @@
 {
   "name": "qansigliere-revelsystems-api-integration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The main idea of ​​this library created in the JavaScript language is to provide a ready-made set of API methods for integration with Revel Systems Management Console",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/QANSIGLIERE/RevelSystemsAPIIntegration/issues"
   },
-  "homepage": "https://github.com/QANSIGLIERE/RevelSystemsAPIIntegration#readme"
+  "homepage": "https://github.com/QANSIGLIERE/RevelSystemsAPIIntegration#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "form-data": "^4.0.1"
+  }
 }
