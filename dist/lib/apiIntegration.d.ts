@@ -14,6 +14,9 @@ export class RevelSystemsAPI {
     };
     Address: string;
     Employee: string;
+    Establishment: string;
+    getEstablishmentByID(id: any): Promise<any>;
+    downloadEstablishment(id?: string, additional_filters?: string): Promise<any>;
     getEmployeeByID(id: any): Promise<any>;
     downloadEmployee(updated_date?: string, last_timesheet_entry?: string, created_date?: string, id?: string, user?: string, additional_filters?: string): Promise<any>;
     getAddressByID(id: any): Promise<any>;

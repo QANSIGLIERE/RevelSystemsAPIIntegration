@@ -1,3 +1,3 @@
 export { RevelSystemsAPI };
-import { RevelSystemsAPI } from "./lib/apiIntegration.js";
+import { RevelSystemsAPI } from "./dist/lib/apiIntegration.js";
 //# sourceMappingURL=index.d.ts.map
