@@ -79,6 +79,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadEstablishment();
 ```
 
+### Order
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getOrderByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadOrder();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
