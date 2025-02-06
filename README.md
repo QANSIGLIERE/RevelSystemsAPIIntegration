@@ -95,6 +95,15 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadOrder();
 ```
 
+### Version
+
+#### Get an object
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getVersion();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
