@@ -104,6 +104,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.getVersion();
 ```
 
+### OrderAllInOne
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getOrderAllInOneByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadOrderAllInOne();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7

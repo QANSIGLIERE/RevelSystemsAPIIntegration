@@ -2,7 +2,7 @@ var { RevelSystemsAPI } = require('./lib/apiIntegration.js');
 
 (async function Demo() {
     let new_integration = new RevelSystemsAPI();
-    let resp = await new_integration.getVersion();
+    let resp = await new_integration.downloadOrderAllInOne();
 
     console.log(JSON.stringify(resp));
 })();

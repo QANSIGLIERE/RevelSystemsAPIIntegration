@@ -17,6 +17,9 @@ export class RevelSystemsAPI {
     Establishment: string;
     Order: string;
     Version: string;
+    OrderAllInOne: string;
+    getOrderAllInOneByID(id: any): Promise<any>;
+    downloadOrderAllInOne(running_tax_number?: string, web_order?: string, has_items?: string, registry_data?: string, id?: string, call_number?: string, uuid?: string, created_by?: string, closed?: string, establishment?: string, updated_date?: string, delivery_employee?: string, pickup_time?: string, dining_option?: string, call_name?: string, printed?: string, device_id?: string, customer?: string, is_invoice?: string, local_id?: string, created_date?: string, external_sync?: string, has_history?: string, additional_filters?: string): Promise<any>;
     getVersion(): Promise<any>;
     getOrderByID(id: any): Promise<any>;
     downloadOrder(running_tax_number?: string, web_order?: string, has_items?: string, registry_data?: string, id?: string, call_number?: string, uuid?: string, created_by?: string, closed?: string, establishment?: string, updated_date?: string, delivery_employee?: string, pickup_time?: string, dining_option?: string, call_name?: string, printed?: string, device_id?: string, customer?: string, is_invoice?: string, local_id?: string, created_date?: string, external_sync?: string, has_history?: string, additional_filters?: string): Promise<any>;
