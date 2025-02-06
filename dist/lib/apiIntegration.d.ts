@@ -13,6 +13,9 @@ export class RevelSystemsAPI {
         'API-AUTHENTICATION': string;
     };
     Address: string;
+    Employee: string;
+    getEmployeeByID(id: any): Promise<any>;
+    downloadEmployee(updated_date?: string, last_timesheet_entry?: string, created_date?: string, id?: string, user?: string, additional_filters?: string): Promise<any>;
     getAddressByID(id: any): Promise<any>;
     downloadAddress(is_external?: string, additional_filters?: string): Promise<any>;
 }

@@ -1,1 +1,1 @@
-{"version":3,"file":"apiIntegration.d.ts","sourceRoot":"","sources":["../../lib/apiIntegration.js"],"names":[],"mappings":"AAEA;IACI,+DAmBC;IAlBG,SAAmD;IACnD;;;;;MAOC;IACD;;;;MAMC;IAED,gBAAmC;IAGvC,sCAEC;IAED,iFAKC;CACJ"}
+{"version":3,"file":"apiIntegration.d.ts","sourceRoot":"","sources":["../../lib/apiIntegration.js"],"names":[],"mappings":"AAEA;IACI,+DAoBC;IAnBG,SAAmD;IACnD;;;;;MAOC;IACD;;;;MAMC;IAED,gBAAmC;IACnC,iBAAqC;IAGzC,uCAEC;IAED,qKAgBC;IAED,sCAEC;IAED,iFAKC;CACJ"}
