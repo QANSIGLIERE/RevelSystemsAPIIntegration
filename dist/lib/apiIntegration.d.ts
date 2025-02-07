@@ -19,6 +19,9 @@ export class RevelSystemsAPI {
     Version: string;
     OrderAllInOne: string;
     OrderDataDiff: string;
+    OrderExchange: string;
+    getOrderExchangeByID(id: any): Promise<any>;
+    downloadOrderExchange(exchanged_order?: string, order?: string, additional_filters?: string): Promise<any>;
     getOrderDataDiffByID(id: any): Promise<any>;
     downloadOrderDataDiff(order?: string, created_date?: string, additional_filters?: string): Promise<any>;
     getOrderAllInOneByID(id: any): Promise<any>;
