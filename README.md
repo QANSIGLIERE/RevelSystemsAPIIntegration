@@ -152,6 +152,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadOrderExchange();
 ```
 
+### OrderExchangeItem
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getOrderExchangeItemByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadOrderExchangeItem();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
