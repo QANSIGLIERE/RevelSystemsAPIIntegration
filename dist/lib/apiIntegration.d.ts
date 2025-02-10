@@ -21,6 +21,9 @@ export class RevelSystemsAPI {
     OrderDataDiff: string;
     OrderExchange: string;
     OrderExchangeItem: string;
+    OrderHistory: string;
+    getOrderHistoryByID(id: any): Promise<any>;
+    downloadOrderHistory(opened?: string, order?: string, closed?: string, uuid?: string, additional_filters?: string): Promise<any>;
     getOrderExchangeItemByID(id: any): Promise<any>;
     downloadOrderExchangeItem(order_item?: string, order_exchange?: string, additional_filters?: string): Promise<any>;
     getOrderExchangeByID(id: any): Promise<any>;
