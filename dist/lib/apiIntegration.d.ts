@@ -20,6 +20,9 @@ export class RevelSystemsAPI {
     OrderAllInOne: string;
     OrderDataDiff: string;
     OrderExchange: string;
+    OrderExchangeItem: string;
+    getOrderExchangeItemByID(id: any): Promise<any>;
+    downloadOrderExchangeItem(order_item?: string, order_exchange?: string, additional_filters?: string): Promise<any>;
     getOrderExchangeByID(id: any): Promise<any>;
     downloadOrderExchange(exchanged_order?: string, order?: string, additional_filters?: string): Promise<any>;
     getOrderDataDiffByID(id: any): Promise<any>;
