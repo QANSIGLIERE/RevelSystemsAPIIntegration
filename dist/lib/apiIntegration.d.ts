@@ -23,6 +23,9 @@ export class RevelSystemsAPI {
     OrderExchangeItem: string;
     OrderHistory: string;
     OrderItem: string;
+    OrderItemCatering: string;
+    getOrderItemCateringByID(id: any): Promise<any>;
+    downloadOrderItemCatering(updated_date?: string, product?: string, voided_date?: string, uuid?: string, catering_complete?: string, created_date?: string, catering_delivery_date?: string, id?: string, order?: string, additional_filters?: string): Promise<any>;
     getOrderItemByID(id: any): Promise<any>;
     downloadOrderItem(updated_date?: string, product?: string, voided_date?: string, uuid?: string, catering_complete?: string, created_date?: string, catering_delivery_date?: string, id?: string, order?: string, additional_filters?: string): Promise<any>;
     getOrderHistoryByID(id: any): Promise<any>;
