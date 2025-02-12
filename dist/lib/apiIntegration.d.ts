@@ -24,6 +24,9 @@ export class RevelSystemsAPI {
     OrderHistory: string;
     OrderItem: string;
     OrderItemCatering: string;
+    OrderItemCommission: string;
+    getOrderItemCommissionByID(id: any): Promise<any>;
+    downloadOrderItemCommission(order_item?: string, commission_user?: string, updated_date?: string, additional_filters?: string): Promise<any>;
     getOrderItemCateringByID(id: any): Promise<any>;
     downloadOrderItemCatering(updated_date?: string, product?: string, voided_date?: string, uuid?: string, catering_complete?: string, created_date?: string, catering_delivery_date?: string, id?: string, order?: string, additional_filters?: string): Promise<any>;
     getOrderItemByID(id: any): Promise<any>;
