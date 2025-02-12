@@ -25,6 +25,9 @@ export class RevelSystemsAPI {
     OrderItem: string;
     OrderItemCatering: string;
     OrderItemCommission: string;
+    OrderItemDataDiff: string;
+    getOrderItemDataDiffByID(id: any): Promise<any>;
+    downloadOrderItemDataDiff(orderitem?: string, created_date?: string, additional_filters?: string): Promise<any>;
     getOrderItemCommissionByID(id: any): Promise<any>;
     downloadOrderItemCommission(order_item?: string, commission_user?: string, updated_date?: string, additional_filters?: string): Promise<any>;
     getOrderItemCateringByID(id: any): Promise<any>;

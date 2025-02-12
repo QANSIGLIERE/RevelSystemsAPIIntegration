@@ -232,6 +232,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadOrderItemCommission();
 ```
 
+### OrderItemDataDiff
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getOrderItemDataDiffByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadOrderItemDataDiff();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
