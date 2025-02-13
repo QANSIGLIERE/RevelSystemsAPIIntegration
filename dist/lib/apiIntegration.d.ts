@@ -26,6 +26,9 @@ export class RevelSystemsAPI {
     OrderItemCatering: string;
     OrderItemCommission: string;
     OrderItemDataDiff: string;
+    OrderTaxBreakDown: string;
+    getOrderTaxBreakDownByID(id: any): Promise<any>;
+    downloadOrderTaxBreakDown(tax_type?: string, order?: string, additional_filters?: string): Promise<any>;
     getOrderItemDataDiffByID(id: any): Promise<any>;
     downloadOrderItemDataDiff(orderitem?: string, created_date?: string, additional_filters?: string): Promise<any>;
     getOrderItemCommissionByID(id: any): Promise<any>;
