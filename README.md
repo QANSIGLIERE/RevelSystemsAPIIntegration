@@ -248,6 +248,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadOrderItemDataDiff();
 ```
 
+### OrderTaxBreakDown
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getOrderTaxBreakDownByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadOrderTaxBreakDown();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
