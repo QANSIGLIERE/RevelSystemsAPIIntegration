@@ -29,6 +29,9 @@ export class RevelSystemsAPI {
     OrderTaxBreakDown: string;
     Payment: string;
     AppliedServiceFee: string;
+    AppliedTaxOrder: string;
+    getAppliedTaxOrderFeeByID(id: any): Promise<any>;
+    downloadAppliedTaxOrder(order?: string, uuid?: string, additional_filters?: string): Promise<any>;
     getAppliedServiceFeeByID(id: any): Promise<any>;
     downloadAppliedServiceFee(item?: string, order?: string, uuid?: string, additional_filters?: string): Promise<any>;
     getPaymentByID(id: any): Promise<any>;
