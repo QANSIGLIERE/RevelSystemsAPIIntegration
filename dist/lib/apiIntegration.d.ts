@@ -30,7 +30,10 @@ export class RevelSystemsAPI {
     Payment: string;
     AppliedServiceFee: string;
     AppliedTaxOrder: string;
-    getAppliedTaxOrderFeeByID(id: any): Promise<any>;
+    AppliedTaxOrderItem: string;
+    getAppliedTaxOrderItemByID(id: any): Promise<any>;
+    downloadAppliedTaxOrderItem(order_item?: string, uuid?: string, additional_filters?: string): Promise<any>;
+    getAppliedTaxOrderByID(id: any): Promise<any>;
     downloadAppliedTaxOrder(order?: string, uuid?: string, additional_filters?: string): Promise<any>;
     getAppliedServiceFeeByID(id: any): Promise<any>;
     downloadAppliedServiceFee(item?: string, order?: string, uuid?: string, additional_filters?: string): Promise<any>;
