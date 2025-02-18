@@ -33,6 +33,9 @@ export class RevelSystemsAPI {
     AppliedTaxOrderItem: string;
     Attribute: string;
     AttributeValue: string;
+    BankDrop: string;
+    getBankDropByID(id: any): Promise<any>;
+    downloadBankDrop(till?: string, local_id?: string, establishment?: string, uuid?: string, drawer_number?: string, additional_filters?: string): Promise<any>;
     getAttributeValueByID(id: any): Promise<any>;
     downloadAttributeValue(active?: string, attribute?: string, updated_date?: string, additional_filters?: string): Promise<any>;
     getAttributeByID(id: any): Promise<any>;
