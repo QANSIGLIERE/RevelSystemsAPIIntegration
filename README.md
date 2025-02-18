@@ -344,6 +344,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadAttribute();
 ```
 
+### AttributeValue
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getAttributeValueByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadAttributeValue();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
