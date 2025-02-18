@@ -328,6 +328,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadAppliedTaxOrderItem();
 ```
 
+### Attribute
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getAttributeByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadAttribute();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
