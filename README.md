@@ -376,6 +376,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadBankDrop();
 ```
 
+### Brand
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getBrandByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadBrand();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
