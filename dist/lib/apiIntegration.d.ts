@@ -34,6 +34,9 @@ export class RevelSystemsAPI {
     Attribute: string;
     AttributeValue: string;
     BankDrop: string;
+    Brand: string;
+    getBrandByID(id: any): Promise<any>;
+    downloadBrand(additional_filters?: string): Promise<any>;
     getBankDropByID(id: any): Promise<any>;
     downloadBankDrop(till?: string, local_id?: string, establishment?: string, uuid?: string, drawer_number?: string, additional_filters?: string): Promise<any>;
     getAttributeValueByID(id: any): Promise<any>;
