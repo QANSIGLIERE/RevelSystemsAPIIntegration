@@ -36,6 +36,9 @@ export class RevelSystemsAPI {
     BankDrop: string;
     Brand: string;
     BusinessActionLog: string;
+    BusinessDay: string;
+    getBusinessDayByID(id: any): Promise<any>;
+    downloadBusinessDay(establishment?: string, additional_filters?: string): Promise<any>;
     getBusinessActionLogByID(id: any): Promise<any>;
     downloadBusinessActionLog(uuid?: string, action_date_time?: string, pos_station?: string, user?: string, action_type?: string, establishment?: string, additional_filters?: string): Promise<any>;
     getBrandByID(id: any): Promise<any>;
