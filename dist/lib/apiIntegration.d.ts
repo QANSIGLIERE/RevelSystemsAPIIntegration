@@ -40,6 +40,9 @@ export class RevelSystemsAPI {
     CashOffice: string;
     ComboProductSet: string;
     ComboProductSetProduct: string;
+    Company: string;
+    getCompanyByID(id: any): Promise<any>;
+    downloadCompany(additional_filters?: string): Promise<any>;
     getComboProductSetProductByID(id: any): Promise<any>;
     downloadComboProductSetProduct(additional_filters?: string): Promise<any>;
     getComboProductSetByID(id: any): Promise<any>;
