@@ -37,6 +37,9 @@ export class RevelSystemsAPI {
     Brand: string;
     BusinessActionLog: string;
     BusinessDay: string;
+    CashOffice: string;
+    getCashOfficeByID(id: any): Promise<any>;
+    downloadCashOffice(establishment?: string, additional_filters?: string): Promise<any>;
     getBusinessDayByID(id: any): Promise<any>;
     downloadBusinessDay(establishment?: string, additional_filters?: string): Promise<any>;
     getBusinessActionLogByID(id: any): Promise<any>;
