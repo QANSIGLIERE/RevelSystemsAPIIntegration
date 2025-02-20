@@ -424,6 +424,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadBusinessDay();
 ```
 
+### CashOffice
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getCashOfficeByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadCashOffice();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
