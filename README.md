@@ -472,6 +472,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadComboProductSetProduct();
 ```
 
+### Company
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getCompanyByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadCompany();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
