@@ -38,6 +38,9 @@ export class RevelSystemsAPI {
     BusinessActionLog: string;
     BusinessDay: string;
     CashOffice: string;
+    ComboProductSet: string;
+    getComboProductSetByID(id: any): Promise<any>;
+    downloadComboProductSet(product?: string, additional_filters?: string): Promise<any>;
     getCashOfficeByID(id: any): Promise<any>;
     downloadCashOffice(establishment?: string, additional_filters?: string): Promise<any>;
     getBusinessDayByID(id: any): Promise<any>;
