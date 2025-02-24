@@ -41,6 +41,9 @@ export class RevelSystemsAPI {
     ComboProductSet: string;
     ComboProductSetProduct: string;
     Company: string;
+    Currency: string;
+    getCurrencyByID(id: any): Promise<any>;
+    downloadCurrency(additional_filters?: string): Promise<any>;
     getCompanyByID(id: any): Promise<any>;
     downloadCompany(additional_filters?: string): Promise<any>;
     getComboProductSetProductByID(id: any): Promise<any>;
