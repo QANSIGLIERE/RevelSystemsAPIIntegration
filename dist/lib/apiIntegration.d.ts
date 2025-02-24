@@ -42,6 +42,9 @@ export class RevelSystemsAPI {
     ComboProductSetProduct: string;
     Company: string;
     Currency: string;
+    CurrentStock: string;
+    getCurrentStockByID(id: any): Promise<any>;
+    downloadCurrentStock(updated_date?: string, establishment?: string, additional_filters?: string): Promise<any>;
     getCurrencyByID(id: any): Promise<any>;
     downloadCurrency(additional_filters?: string): Promise<any>;
     getCompanyByID(id: any): Promise<any>;
