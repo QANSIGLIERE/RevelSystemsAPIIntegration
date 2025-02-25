@@ -44,6 +44,9 @@ export class RevelSystemsAPI {
     Currency: string;
     CurrentStock: string;
     CustomMenu: string;
+    CustomOrderOption: string;
+    getCustomOrderOptionByID(id: any): Promise<any>;
+    downloadCustomOrderOption(additional_filters?: string): Promise<any>;
     getCustomMenuByID(id: any): Promise<any>;
     downloadCustomMenu(active?: string, updated_date?: string, product_group?: string, additional_filters?: string): Promise<any>;
     getCurrentStockByID(id: any): Promise<any>;
