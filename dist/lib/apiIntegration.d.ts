@@ -46,6 +46,9 @@ export class RevelSystemsAPI {
     CustomMenu: string;
     CustomOrderOption: string;
     CustomOrderOptionPrinterSettings: string;
+    CustomPaymentType: string;
+    getCustomPaymentTypeByID(id: any): Promise<any>;
+    downloadCustomPaymentType(additional_filters?: string): Promise<any>;
     getCustomOrderOptionPrinterSettingsByID(id: any): Promise<any>;
     downloadCustomOrderOptionPrinterSettings(additional_filters?: string): Promise<any>;
     getCustomOrderOptionByID(id: any): Promise<any>;
