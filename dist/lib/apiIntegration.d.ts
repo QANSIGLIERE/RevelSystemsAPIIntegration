@@ -45,6 +45,9 @@ export class RevelSystemsAPI {
     CurrentStock: string;
     CustomMenu: string;
     CustomOrderOption: string;
+    CustomOrderOptionPrinterSettings: string;
+    getCustomOrderOptionPrinterSettingsByID(id: any): Promise<any>;
+    downloadCustomOrderOptionPrinterSettings(additional_filters?: string): Promise<any>;
     getCustomOrderOptionByID(id: any): Promise<any>;
     downloadCustomOrderOption(additional_filters?: string): Promise<any>;
     getCustomMenuByID(id: any): Promise<any>;
