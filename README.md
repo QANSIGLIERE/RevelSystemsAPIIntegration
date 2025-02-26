@@ -648,6 +648,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadCustomerGroup();
 ```
 
+### CustomerGroupCustomers
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getCustomerGroupCustomersByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadCustomerGroupCustomers();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
