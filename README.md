@@ -664,6 +664,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadCustomerGroupCustomers();
 ```
 
+### CustomerHistory
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getCustomerHistoryByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadCustomerHistory();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7

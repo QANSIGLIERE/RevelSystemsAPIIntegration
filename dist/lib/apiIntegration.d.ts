@@ -52,6 +52,9 @@ export class RevelSystemsAPI {
     CustomerEstablishment: string;
     CustomerGroup: string;
     CustomerGroupCustomers: string;
+    CustomerHistory: string;
+    getCustomerHistoryByID(id: any): Promise<any>;
+    downloadCustomerHistory(cc_last_name?: string, now?: string, last_4_cc_digits?: string, cc_first_name?: string, id?: string, additional_filters?: string): Promise<any>;
     getCustomerGroupCustomersByID(id: any): Promise<any>;
     downloadCustomerGroupCustomers(customer_group?: string, id?: string, additional_filters?: string): Promise<any>;
     getCustomerGroupByID(id: any): Promise<any>;
