@@ -616,6 +616,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.downloadCustomerAddress();
 ```
 
+### CustomerEstablishment
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getCustomerEstablishmentByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadCustomerEstablishment();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
