@@ -49,6 +49,9 @@ export class RevelSystemsAPI {
     CustomPaymentType: string;
     Customer: string;
     CustomerAddress: string;
+    CustomerEstablishment: string;
+    getCustomerEstablishmentByID(id: any): Promise<any>;
+    downloadCustomerEstablishment(customer?: string, establishment?: string, additional_filters?: string): Promise<any>;
     getCustomerAddressByID(id: any): Promise<any>;
     downloadCustomerAddress(customer?: string, uuid?: string, country?: string, active?: string, street_1?: string, id?: string, additional_filters?: string): Promise<any>;
     getCustomerByID(id: any): Promise<any>;
