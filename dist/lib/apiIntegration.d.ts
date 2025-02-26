@@ -48,6 +48,9 @@ export class RevelSystemsAPI {
     CustomOrderOptionPrinterSettings: string;
     CustomPaymentType: string;
     Customer: string;
+    CustomerAddress: string;
+    getCustomerAddressByID(id: any): Promise<any>;
+    downloadCustomerAddress(customer?: string, uuid?: string, country?: string, active?: string, street_1?: string, id?: string, additional_filters?: string): Promise<any>;
     getCustomerByID(id: any): Promise<any>;
     downloadCustomer(updated_date?: string, phone_number?: string, last_name?: string, total_purchases?: string, active?: string, first_name?: string, uuid?: string, ref_number?: string, email?: string, created_date?: string, total_visits?: string, additional_filters?: string): Promise<any>;
     getCustomPaymentTypeByID(id: any): Promise<any>;
