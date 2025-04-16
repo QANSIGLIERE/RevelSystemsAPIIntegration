@@ -55,6 +55,9 @@ export class RevelSystemsAPI {
     CustomerHistory: string;
     DeclaredTips: string;
     Department: string;
+    Device: string;
+    getDeviceByID(id: any): Promise<any>;
+    downloadDevice(printer_pos_or_items?: string, uuid?: string, establishment?: string, device_type?: string, active?: string, ip_address?: string, additional_filters?: string): Promise<any>;
     getDepartmentByID(id: any): Promise<any>;
     getDeclaredTipsByID(id: any): Promise<any>;
     downloadDeclaredTips(employee?: string, date_range_from?: string, establishment?: string, date_range_to?: string, additional_filters?: string): Promise<any>;
