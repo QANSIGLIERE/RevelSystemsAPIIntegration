@@ -705,6 +705,22 @@ let apiRequest = new RevelSystemsAPI();
 let resp = await apiRequest.getDepartmentByID(1);
 ```
 
+### Device
+
+#### Get any specific object by id
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.getDeviceByID(1);
+```
+
+#### Download all filtered records
+
+```
+let apiRequest = new RevelSystemsAPI();
+let resp = await apiRequest.downloadDevice();
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
